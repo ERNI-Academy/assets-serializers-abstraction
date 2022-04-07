@@ -23,6 +23,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".sln", ".sln", "{475630B7-4
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EA.Serializers.Contracts", "src\EA.Serializers.Contracts\EA.Serializers.Contracts.csproj", "{F11AF6FB-0419-4D49-9176-840AE6B230C1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EA.Serializers.Json", "src\EA.Serializers.Json\EA.Serializers.Json.csproj", "{C61AEC57-737D-4A89-8050-DB3997E73298}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,12 +35,17 @@ Global
 		{F11AF6FB-0419-4D49-9176-840AE6B230C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F11AF6FB-0419-4D49-9176-840AE6B230C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F11AF6FB-0419-4D49-9176-840AE6B230C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C61AEC57-737D-4A89-8050-DB3997E73298}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C61AEC57-737D-4A89-8050-DB3997E73298}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C61AEC57-737D-4A89-8050-DB3997E73298}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C61AEC57-737D-4A89-8050-DB3997E73298}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F11AF6FB-0419-4D49-9176-840AE6B230C1} = {993A08AA-0E82-4A34-98B1-31F4401F2545}
+		{C61AEC57-737D-4A89-8050-DB3997E73298} = {993A08AA-0E82-4A34-98B1-31F4401F2545}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {99FE9388-936C-4A7A-A66B-7A4091EFA37C}

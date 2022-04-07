@@ -9,10 +9,14 @@
 		<RepositoryType>git</RepositoryType>
 		<Authors>ErniAcademy</Authors>
 		<Company>Erni</Company>
-		<PackageDescription>Serializers System.Text.Json implementation</PackageDescription>
-		<PackageTags>Serializers System.Text.Json Json</PackageTags>
+		<PackageDescription>Serializers Newtonsoft.Json implementation</PackageDescription>
+		<PackageTags>Serializers Newtonsoft.Json Json</PackageTags>
 		<VersionPrefix>1.0.0</VersionPrefix>
 	</PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\EA.Serializers.Contracts\EA.Serializers.Contracts.csproj" />

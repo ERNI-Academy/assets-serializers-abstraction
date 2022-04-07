@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EA.Serializers.Json", "src\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EA.Serializers.NewtonsoftJson", "src\EA.Serializers.NewtonsoftJson\EA.Serializers.NewtonsoftJson.csproj", "{4331E22C-D050-494B-9539-0FB55598EB0D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EA.Serializers.MessagePack", "src\EA.Serializers.MessagePack\EA.Serializers.MessagePack.csproj", "{E25F2B57-593A-4E6E-B2B3-96667C55E9A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{4331E22C-D050-494B-9539-0FB55598EB0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4331E22C-D050-494B-9539-0FB55598EB0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4331E22C-D050-494B-9539-0FB55598EB0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E25F2B57-593A-4E6E-B2B3-96667C55E9A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E25F2B57-593A-4E6E-B2B3-96667C55E9A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E25F2B57-593A-4E6E-B2B3-96667C55E9A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E25F2B57-593A-4E6E-B2B3-96667C55E9A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +59,7 @@ Global
 		{F11AF6FB-0419-4D49-9176-840AE6B230C1} = {993A08AA-0E82-4A34-98B1-31F4401F2545}
 		{C61AEC57-737D-4A89-8050-DB3997E73298} = {993A08AA-0E82-4A34-98B1-31F4401F2545}
 		{4331E22C-D050-494B-9539-0FB55598EB0D} = {993A08AA-0E82-4A34-98B1-31F4401F2545}
+		{E25F2B57-593A-4E6E-B2B3-96667C55E9A3} = {993A08AA-0E82-4A34-98B1-31F4401F2545}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {99FE9388-936C-4A7A-A66B-7A4091EFA37C}

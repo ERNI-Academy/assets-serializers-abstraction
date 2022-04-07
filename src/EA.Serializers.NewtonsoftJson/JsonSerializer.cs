@@ -16,20 +16,38 @@ public class JsonSerializer : ISerializer
 
     public string ContentType => "application/json";
 
-    public void SerializeToStream<TItem>(TItem item, Stream stream) => SerializeToStreamAsync(item, stream).GetAwaiter().GetResult();
-
-    public Task SerializeToStreamAsync<TItem>(TItem item, Stream stream, CancellationToken cancellationToken = default)
+    public void SerializeToStream<TItem>(TItem item, Stream stream)
     {
-        using (StreamWriter writer = new StreamWriter(stream))
-        using (JsonTextWriter jsonWriter = new JsonTextWriter(writer))
+        var writer = new StreamWriter(stream);
+        var jsonWriter = new JsonTextWriter(writer);
         _jsonSerializer.Serialize(jsonWriter, item);
+        writer.Flush();
+        jsonWriter.Flush();
         stream.Position = 0;
-        return Task.CompletedTask;
+    }
+
+    public async Task SerializeToStreamAsync<TItem>(TItem item, Stream stream, CancellationToken cancellationToken = default)
+    {
+        var writer = new StreamWriter(stream);
+        var jsonWriter = new JsonTextWriter(writer);
+        _jsonSerializer.Serialize(jsonWriter, item);
+        await writer.FlushAsync();
+        await jsonWriter.FlushAsync();
+        stream.Position = 0;
     }
 
     public string SerializeToString<TItem>(TItem item) => JsonConvert.SerializeObject(item, _jsonSerializerSettings);
 
-    public TItem DeserializeFromStream<TItem>(Stream stream) => DeserializeFromStreamAsync<TItem>(stream).GetAwaiter().GetResult();
+    public TItem DeserializeFromStream<TItem>(Stream stream)
+    {
+        TItem item = default;
+        using (StreamReader reader = new StreamReader(stream))
+        using (JsonTextReader jsonReader = new JsonTextReader(reader))
+        {
+            item = _jsonSerializer.Deserialize<TItem>(jsonReader);
+        }
+        return item;
+    }
 
     public TItem DeserializeFromString<TItem>(string item) => JsonConvert.DeserializeObject<TItem>(item, _jsonSerializerSettings);
 
@@ -39,7 +57,7 @@ public class JsonSerializer : ISerializer
         using (StreamReader reader = new StreamReader(stream))
         using (JsonTextReader jsonReader = new JsonTextReader(reader))
         {
-            item = _jsonSerializer.Deserialize<TItem>(jsonReader); 
+            item = _jsonSerializer.Deserialize<TItem>(jsonReader);
         }
         return new ValueTask<TItem>(item);
     }

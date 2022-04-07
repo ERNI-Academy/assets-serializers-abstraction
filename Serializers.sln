@@ -8,9 +8,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{7AB46A41-E8B0-48D0-A38A-118861BA97F6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{C3DA3AB0-3978-422E-AF77-6DF53633E339}"
-	ProjectSection(SolutionItems) = preProject
-		.github\config.yml = .github\config.yml
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".sln", ".sln", "{475630B7-4524-4F6B-B83D-F1037D88606C}"
 	ProjectSection(SolutionItems) = preProject
@@ -30,6 +27,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EA.Serializers.MessagePack", "src\EA.Serializers.MessagePack\EA.Serializers.MessagePack.csproj", "{E25F2B57-593A-4E6E-B2B3-96667C55E9A3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EA.Serializers.UnitTests", "tests\EA.Serializers.UnitTests\EA.Serializers.UnitTests.csproj", "{85A900D9-44CE-4145-ADB4-6FCA7B508188}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{888B4522-2ACA-4DAA-8CA1-DA43B0FFA043}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\nugetpush.yml = .github\workflows\nugetpush.yml
+		.github\workflows\sonarcloud.yml = .github\workflows\sonarcloud.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,6 +70,7 @@ Global
 		{4331E22C-D050-494B-9539-0FB55598EB0D} = {993A08AA-0E82-4A34-98B1-31F4401F2545}
 		{E25F2B57-593A-4E6E-B2B3-96667C55E9A3} = {993A08AA-0E82-4A34-98B1-31F4401F2545}
 		{85A900D9-44CE-4145-ADB4-6FCA7B508188} = {7AB46A41-E8B0-48D0-A38A-118861BA97F6}
+		{888B4522-2ACA-4DAA-8CA1-DA43B0FFA043} = {C3DA3AB0-3978-422E-AF77-6DF53633E339}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {99FE9388-936C-4A7A-A66B-7A4091EFA37C}

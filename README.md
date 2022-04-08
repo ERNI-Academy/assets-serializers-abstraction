@@ -1,7 +1,5 @@
 # About 
-**Cloud Storage Abstraction** is a small dll ( on the next iteration, it will be a nuget package) that provides a robust and reusable implementations. 
-
-The main focus is work with CRUD approach with Azure Storage.
+**Serializers Abstraction** define a contract and many implementations for working with many technologies for serialization
 
 ## Built With
 
@@ -18,9 +16,7 @@ The main focus is work with CRUD approach with Azure Storage.
 - DeserializeFromStreamAsync
 
 # Getting Started
-At this point, we have to use this project like dll or directly on our production projects.
-
-On next releases, we transform the solution into nuget. 
+Use the latest nuget published of EA.Serializers.Contracts and the desire nuget of the implementation
 
 ## Prerequisites
 

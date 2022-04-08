@@ -35,5 +35,5 @@ jobs:
             dotnet sonarscanner begin /k:"ERNI-Academy_assets-serializers-abstraction" /o:"erni-academy" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
             dotnet build ./Serializers.sln --configuration Release
             dotnet test --no-restore collect:"XPlat Code Coverage" --results-directory ./coverage
-            reportgenerator "-reports:./coverage/*/coverage.cobertura.xml" "-targetdir:coverage" "-reporttypes:SonarQube
-            dotnet sonarscanner end /d:sonar.login="$SONAR_TOKEN
+            reportgenerator "-reports:./coverage/*/coverage.cobertura.xml" "-targetdir:coverage" "-reporttypes:SonarQube"
+            dotnet sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"

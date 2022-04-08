@@ -1,54 +1,61 @@
-# About {{ Name }}
-ERNI Academy StarterKit, PoC, or Gidelines. This is an about description of your repository.
+# About 
+**Cloud Storage Abstraction** is a small dll ( on the next iteration, it will be a nuget package) that provides a robust and reusable implementations. 
 
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+The main focus is work with CRUD approach with Azure Storage.
 
 ## Built With
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-- [Tools A](https://example.com)
-- [Framework B](https://example.com)
-- [Project C](https://example.com)
+- [.Net 6.0](https://docs.microsoft.com/en-us/dotnet/core/whats-new/dotnet-6)
+- [c# 11](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11)
 
-## Features
-- Be awesome
-- Make things faster
 
-## Getting Started
-This is an example of how you may give instructions on setting up your project locally. To get a local copy up and running follow these simple example steps.
+# Features
+- SerializeToStream
+- SerializeToStreamAsync
+- SerializeToString
+- DeserializeFromStream
+- DeserializeFromString
+- DeserializeFromStreamAsync
+
+# Getting Started
+At this point, we have to use this project like dll or directly on our production projects.
+
+On next releases, we transform the solution into nuget. 
 
 ## Prerequisites
-This is an example of how to list things you need to use the software and how to install them.
+
+- [.Net 6.0](https://docs.microsoft.com/en-us/dotnet/core/whats-new/dotnet-6)
+- [c# 11](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11)
+
+
+## Dependencies
+
+- .Net 6.0
+- System.Text.Json
+- Newtonsoft
+- MessagePack
 
 ## Installation
-Installation instructions {{ Name }} by running:
+At this point, it is possible to use that asset:
+- Cloning the repo and use it directly on you solution. On this way, you will have access too entire code. 
+- Using the dll located on Release folder
 
-1. Clone the repo
-   ```sh 
-   git clone https://github.com/ERNI-Academy/Project-Name.git
-   ```
-2. Install packages
-    ```sh
-    npm install
-    ```
-3. Configure
-    ```JS
-    const API_KEY = 'ENTER YOUR API';
-    ```
-## License
+## samples
 
-[MIT](LICENSE) © {{ Year }} [ERNI - Swiss Software Engineering](https://www.betterask.erni)
+```c#
+ ISerializer serializer = new EA.Serializers.Json.JsonSerializer();
+ ISerializer serializer = new EA.Serializers.NewtonsoftJson.JsonSerializer();
+ ISerializer serializer = new EA.Serializers.MessagePack.MessagePackSerializer();
+```
+* take care about that sample are instances directly. In general situation, we should use DI. 
+* take a look at the UnitTests project to see it samples of use
 
-**Contact:** 
+# Contributing
 
-{{ Your Name}}  - [@your_twitter](https://twitter.com/your_username) - your_mail
-@example.com
+Please see our [Contribution Guide](CONTRIBUTING.md) to learn how to contribute.
 
-## Contributors ✨
+# License
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+[MIT](LICENSE) © 2022 [ERNI - Swiss Software Engineering](https://www.betterask.erni)
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+**Contact:**

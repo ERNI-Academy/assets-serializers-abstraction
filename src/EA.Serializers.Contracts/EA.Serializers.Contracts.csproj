@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<TargetFramework>net6.0</TargetFramework>
+		<RepositoryUrl>https://github.com/ERNI-Academy/assets-serializers-abstraction</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<Authors>ErniAcademy</Authors>
+		<Company>Erni</Company>
+		<PackageDescription>Serializers contracts</PackageDescription>
+		<PackageTags>Serializers</PackageTags>
+		<VersionPrefix>1.0.0</VersionPrefix>
+	</PropertyGroup>
+	
+</Project>

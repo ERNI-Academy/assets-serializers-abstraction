@@ -18,15 +18,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".sln", ".sln", "{475630B7-4
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EA.Serializers.Contracts", "src\EA.Serializers.Contracts\EA.Serializers.Contracts.csproj", "{F11AF6FB-0419-4D49-9176-840AE6B230C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ErniAcademy.Serializers.Contracts", "src\EA.Serializers.Contracts\ErniAcademy.Serializers.Contracts.csproj", "{F11AF6FB-0419-4D49-9176-840AE6B230C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EA.Serializers.Json", "src\EA.Serializers.Json\EA.Serializers.Json.csproj", "{C61AEC57-737D-4A89-8050-DB3997E73298}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ErniAcademy.Serializers.Json", "src\EA.Serializers.Json\ErniAcademy.Serializers.Json.csproj", "{C61AEC57-737D-4A89-8050-DB3997E73298}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EA.Serializers.NewtonsoftJson", "src\EA.Serializers.NewtonsoftJson\EA.Serializers.NewtonsoftJson.csproj", "{4331E22C-D050-494B-9539-0FB55598EB0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ErniAcademy.Serializers.NewtonsoftJson", "src\EA.Serializers.NewtonsoftJson\ErniAcademy.Serializers.NewtonsoftJson.csproj", "{4331E22C-D050-494B-9539-0FB55598EB0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EA.Serializers.MessagePack", "src\EA.Serializers.MessagePack\EA.Serializers.MessagePack.csproj", "{E25F2B57-593A-4E6E-B2B3-96667C55E9A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ErniAcademy.Serializers.MessagePack", "src\EA.Serializers.MessagePack\ErniAcademy.Serializers.MessagePack.csproj", "{E25F2B57-593A-4E6E-B2B3-96667C55E9A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EA.Serializers.UnitTests", "tests\EA.Serializers.UnitTests\EA.Serializers.UnitTests.csproj", "{85A900D9-44CE-4145-ADB4-6FCA7B508188}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ErniAcademy.Serializers.UnitTests", "tests\EA.Serializers.UnitTests\ErniAcademy.Serializers.UnitTests.csproj", "{85A900D9-44CE-4145-ADB4-6FCA7B508188}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{888B4522-2ACA-4DAA-8CA1-DA43B0FFA043}"
 	ProjectSection(SolutionItems) = preProject

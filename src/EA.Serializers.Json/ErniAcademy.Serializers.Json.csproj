@@ -15,7 +15,7 @@
 	</PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EA.Serializers.Contracts\EA.Serializers.Contracts.csproj" />
+    <ProjectReference Include="..\ErniAcademy.Serializers.Contracts\ErniAcademy.Serializers.Contracts.csproj" />
   </ItemGroup>
 
 </Project>

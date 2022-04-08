@@ -25,9 +25,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\EA.Serializers.Json\ErniAcademy.Serializers.Json.csproj" />
-    <ProjectReference Include="..\..\src\EA.Serializers.MessagePack\ErniAcademy.Serializers.MessagePack.csproj" />
-    <ProjectReference Include="..\..\src\EA.Serializers.NewtonsoftJson\ErniAcademy.Serializers.NewtonsoftJson.csproj" />
+    <ProjectReference Include="..\..\src\ErniAcademy.Serializers.Json\ErniAcademy.Serializers.Json.csproj" />
+    <ProjectReference Include="..\..\src\ErniAcademy.Serializers.MessagePack\ErniAcademy.Serializers.MessagePack.csproj" />
+    <ProjectReference Include="..\..\src\ErniAcademy.Serializers.NewtonsoftJson\ErniAcademy.Serializers.NewtonsoftJson.csproj" />
   </ItemGroup>
 
 </Project>

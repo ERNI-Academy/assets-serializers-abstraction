@@ -27,7 +27,8 @@ jobs:
         run: dotnet build ./Serializers.sln --configuration Release --no-restore
 
       - name: Tests
-        run: dotnet test "tests/ErniAcademy.Serializers.UnitTests/ErniAcademy.Serializers.UnitTests.csproj" --no-restore collect:"XPlat Code Coverage" --results-directory ./coverage
+        run: dotnet test "tests/ErniAcademy.Serializers.UnitTests/ErniAcademy.Serializers.UnitTests.csproj" --no-restore /p:CollectCoverage=true /p:CoverletOutput=coverage/ /p:CoverletOutputFormat=lcov
+
 
       - name: Set up JDK 11
         uses: actions/setup-java@v1
@@ -49,3 +50,7 @@ jobs:
             dotnet sonarscanner begin /k:"ERNI-Academy_assets-serializers-abstraction" /o:"erni-academy" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
             reportgenerator "-reports:./coverage/*/coverage.cobertura.xml" "-targetdir:coverage" "-reporttypes:SonarQube"
             dotnet sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
+
+
+            #dotnet build ./Serializers.sln --configuration Release --no-restore
+            #dotnet test "tests/ErniAcademy.Serializers.UnitTests/ErniAcademy.Serializers.UnitTests.csproj" --no-restore collect:"XPlat Code Coverage" --results-directory ./coverage

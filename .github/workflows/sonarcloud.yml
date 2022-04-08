@@ -16,13 +16,19 @@ jobs:
     name: Build
     runs-on: windows-latest
     steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
+      - name: Build
+        run: dotnet build ./Serializers.sln --configuration Release
+      - name: Tests
+        run: dotnet test --no-restore
+
       - name: Set up JDK 11
         uses: actions/setup-java@v1
         with:
           java-version: 1.11
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
+      
       - name: Cache SonarCloud packages
         uses: actions/cache@v1
         with:
@@ -49,6 +55,4 @@ jobs:
         shell: powershell
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"ERNI-Academy_assets-serializers-abstraction" /o:"erni-academy" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
-          dotnet build ./Serializers.sln --configuration Release
-          dotnet test --no-restore
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"

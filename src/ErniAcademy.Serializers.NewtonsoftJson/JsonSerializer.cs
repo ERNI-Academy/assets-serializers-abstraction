@@ -32,7 +32,7 @@ public class JsonSerializer : ISerializer
         var jsonWriter = new JsonTextWriter(writer);
         _jsonSerializer.Serialize(jsonWriter, item);
         await writer.FlushAsync();
-        await jsonWriter.FlushAsync();
+        await jsonWriter.FlushAsync(cancellationToken);
         stream.Position = 0;
     }
 
@@ -40,7 +40,7 @@ public class JsonSerializer : ISerializer
 
     public TItem DeserializeFromStream<TItem>(Stream stream)
     {
-        TItem item = default;
+        TItem item;
         using (StreamReader reader = new StreamReader(stream))
         using (JsonTextReader jsonReader = new JsonTextReader(reader))
         {
@@ -53,7 +53,7 @@ public class JsonSerializer : ISerializer
 
     public ValueTask<TItem> DeserializeFromStreamAsync<TItem>(Stream stream, CancellationToken cancellationToken = default)
     {
-        TItem item = default;
+        TItem item;
         using (StreamReader reader = new StreamReader(stream))
         using (JsonTextReader jsonReader = new JsonTextReader(reader))
         {

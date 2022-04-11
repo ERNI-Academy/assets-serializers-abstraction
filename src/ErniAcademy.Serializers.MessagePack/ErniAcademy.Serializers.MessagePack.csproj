@@ -3,8 +3,6 @@
 	<PropertyGroup>
 		<TargetFramework>net6.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
-		<Nullable>enable</Nullable>
-		<TargetFramework>net6.0</TargetFramework>
 		<RepositoryUrl>https://github.com/ERNI-Academy/assets-serializers-abstraction</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<Authors>ErniAcademy</Authors>

@@ -24,7 +24,7 @@ public class JsonSerializer : ISerializer
 
     public string SerializeToString<TItem>(TItem item) => System.Text.Json.JsonSerializer.Serialize<TItem>(item, _jsonSerializerOptions);
 
-    public TItem DeserializeFromStream<TItem>(Stream stream) => DeserializeFromStreamAsync<TItem>(stream).GetAwaiter().GetResult();
+    public TItem DeserializeFromStream<TItem>(Stream stream) => System.Text.Json.JsonSerializer.Deserialize<TItem>(stream, _jsonSerializerOptions);
 
     public TItem DeserializeFromString<TItem>(string item) => System.Text.Json.JsonSerializer.Deserialize<TItem>(item, _jsonSerializerOptions);
 

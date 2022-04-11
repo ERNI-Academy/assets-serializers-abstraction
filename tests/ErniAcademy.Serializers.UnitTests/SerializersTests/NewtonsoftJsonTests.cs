@@ -1,10 +1,10 @@
-﻿using EA.Serializers.Contracts;
+﻿using ErniAcademy.Serializers.Contracts;
 
-namespace EA.Serializers.UnitTests.SerializersTests;
+namespace ErniAcademy.Serializers.UnitTests.SerializersTests;
 
 public class NewtonsoftJsonTests : BaseTests
 {
     protected override string ContentType => "application/json";
 
-    protected override ISerializer BuildSut() => new EA.Serializers.NewtonsoftJson.JsonSerializer();
+    protected override ISerializer BuildSut() => new ErniAcademy.Serializers.NewtonsoftJson.JsonSerializer();
 }

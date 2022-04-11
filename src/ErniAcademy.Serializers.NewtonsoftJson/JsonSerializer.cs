@@ -1,7 +1,7 @@
-﻿using EA.Serializers.Contracts;
+﻿using ErniAcademy.Serializers.Contracts;
 using Newtonsoft.Json;
 
-namespace EA.Serializers.NewtonsoftJson;
+namespace ErniAcademy.Serializers.NewtonsoftJson;
 
 public class JsonSerializer : ISerializer
 {

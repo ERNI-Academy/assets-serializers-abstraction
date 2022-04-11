@@ -7,7 +7,7 @@ public class JsonSerializer : ISerializer
 {
     private readonly JsonSerializerOptions _jsonSerializerOptions;
 
-    public JsonSerializer(JsonSerializerOptions? jsonSerializerOptions = null)
+    public JsonSerializer(JsonSerializerOptions jsonSerializerOptions = null)
     {
         _jsonSerializerOptions = jsonSerializerOptions ?? new JsonSerializerOptions();
     }

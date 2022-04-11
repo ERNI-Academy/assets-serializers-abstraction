@@ -8,7 +8,7 @@ public class JsonSerializer : ISerializer
     private readonly Newtonsoft.Json.JsonSerializer _jsonSerializer;
     private readonly JsonSerializerSettings _jsonSerializerSettings;
 
-    public JsonSerializer(JsonSerializerSettings? jsonSerializerSettings = null)
+    public JsonSerializer(JsonSerializerSettings jsonSerializerSettings = null)
     {
         _jsonSerializerSettings = jsonSerializerSettings ?? new JsonSerializerSettings();
         _jsonSerializer = Newtonsoft.Json.JsonSerializer.Create(_jsonSerializerSettings);

@@ -1,5 +1,5 @@
-# About 
-**Serializers Abstraction** define a contract and many implementations for working with many technologies for serialization
+# About Serializers Abstraction
+Define a contract and many implementations for working with many technologies for serialization
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
@@ -44,9 +44,21 @@ At this point, it is possible to use that asset:
 ## samples
 
 ```c#
+ var stream = new MemoryStream();
+ var item = new Item(); //Item can be any obj
+
+ //you can choose between many impl 
  ISerializer serializer = new ErniAcademy.Serializers.Json.JsonSerializer();
  ISerializer serializer = new ErniAcademy.Serializers.NewtonsoftJson.JsonSerializer();
- ISerializer serializer = new ErniAcademy.Serializers.MessagePack.MessagePackSerializer();
+ ISerializer serializer = new ErniAcademy.Serializers.MessagePack.MessagePackSerializer(); //keep in mind that for Message pack you will need to add [DataContract] and [DataMembers] attributes
+
+ //serialize
+ await serializer.SerializeToStreamAsync(item, stream);
+ //at this point you can do what you want with the stream that contain your item, for example you can upload the stream to a blob e.g. https://docs.microsoft.com/en-us/dotnet/api/azure.storage.blobs.blobclient.uploadasync?view=azure-dotnet#azure-storage-blobs-blobclient-uploadasync(system-io-stream-system-boolean-system-threading-cancellationtoken)
+
+ //deserialize
+ var deserializedItem = await serializer.DeserializeFromStreamAsync<Item>(stream);
+ //at this point you will get your item instance
 ```
 
 - take care about that sample are instances directly. In general situation, we should use DI.

@@ -29,7 +29,7 @@ public interface ISerializer
     /// <param name="item">The item to be serialized</param>
     /// <param name="stream">The stream target</param>
     /// <param name="cancellationToken">The cancellation token</param>
-    /// <returns></returns>
+    /// <returns>A task that represents the asynchronous write operation</returns>
     Task SerializeToStreamAsync<TItem>(TItem item, Stream stream, CancellationToken cancellationToken = default);
 
     /// <summary>

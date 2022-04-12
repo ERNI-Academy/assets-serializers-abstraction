@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace EA.Serializers.UnitTests.Models;
+namespace ErniAcademy.Serializers.UnitTests.Models;
 
 [DataContract]
 public class DummyModel

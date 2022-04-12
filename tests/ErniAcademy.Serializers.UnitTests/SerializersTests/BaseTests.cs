@@ -1,11 +1,11 @@
-using EA.Serializers.Contracts;
-using EA.Serializers.UnitTests.Models;
+using ErniAcademy.Serializers.Contracts;
+using ErniAcademy.Serializers.UnitTests.Models;
 using FluentAssertions;
 using System.IO;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace EA.Serializers.UnitTests.SerializersTests;
+namespace ErniAcademy.Serializers.UnitTests.SerializersTests;
 
 public abstract class BaseTests
 {

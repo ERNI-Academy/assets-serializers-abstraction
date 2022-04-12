@@ -1,8 +1,8 @@
-﻿using EA.Serializers.Contracts;
+﻿using ErniAcademy.Serializers.Contracts;
 using MessagePack;
 using MessagePack.Resolvers;
 
-namespace EA.Serializers.MessagePack;
+namespace ErniAcademy.Serializers.MessagePack;
 
 public class MessagePackSerializer : ISerializer
 {

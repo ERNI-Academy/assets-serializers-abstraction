@@ -1,13 +1,13 @@
-﻿using EA.Serializers.Contracts;
+﻿using ErniAcademy.Serializers.Contracts;
 using System.Text.Json;
 
-namespace EA.Serializers.Json;
+namespace ErniAcademy.Serializers.Json;
 
 public class JsonSerializer : ISerializer
 {
     private readonly JsonSerializerOptions _jsonSerializerOptions;
 
-    public JsonSerializer(JsonSerializerOptions? jsonSerializerOptions = null)
+    public JsonSerializer(JsonSerializerOptions jsonSerializerOptions = null)
     {
         _jsonSerializerOptions = jsonSerializerOptions ?? new JsonSerializerOptions();
     }
@@ -24,7 +24,7 @@ public class JsonSerializer : ISerializer
 
     public string SerializeToString<TItem>(TItem item) => System.Text.Json.JsonSerializer.Serialize<TItem>(item, _jsonSerializerOptions);
 
-    public TItem DeserializeFromStream<TItem>(Stream stream) => DeserializeFromStreamAsync<TItem>(stream).GetAwaiter().GetResult();
+    public TItem DeserializeFromStream<TItem>(Stream stream) => System.Text.Json.JsonSerializer.Deserialize<TItem>(stream, _jsonSerializerOptions);
 
     public TItem DeserializeFromString<TItem>(string item) => System.Text.Json.JsonSerializer.Deserialize<TItem>(item, _jsonSerializerOptions);
 

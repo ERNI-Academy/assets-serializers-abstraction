@@ -3,23 +3,17 @@
 	<PropertyGroup>
 		<TargetFramework>net6.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
-		<Nullable>enable</Nullable>
-		<TargetFramework>net6.0</TargetFramework>
 		<RepositoryUrl>https://github.com/ERNI-Academy/assets-serializers-abstraction</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<Authors>ErniAcademy</Authors>
 		<Company>Erni</Company>
-		<PackageDescription>Serializers Newtonsoft.Json implementation</PackageDescription>
-		<PackageTags>Serializers Newtonsoft.Json Json</PackageTags>
+		<PackageDescription>Serializers System.Text.Json implementation</PackageDescription>
+		<PackageTags>Serializers System.Text.Json Json</PackageTags>
 		<VersionPrefix>1.0.0</VersionPrefix>
 	</PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\EA.Serializers.Contracts\EA.Serializers.Contracts.csproj" />
+    <ProjectReference Include="..\ErniAcademy.Serializers.Contracts\ErniAcademy.Serializers.Contracts.csproj" />
   </ItemGroup>
 
 </Project>

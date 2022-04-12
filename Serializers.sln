@@ -18,21 +18,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".sln", ".sln", "{475630B7-4
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EA.Serializers.Contracts", "src\EA.Serializers.Contracts\EA.Serializers.Contracts.csproj", "{F11AF6FB-0419-4D49-9176-840AE6B230C1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EA.Serializers.Json", "src\EA.Serializers.Json\EA.Serializers.Json.csproj", "{C61AEC57-737D-4A89-8050-DB3997E73298}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EA.Serializers.NewtonsoftJson", "src\EA.Serializers.NewtonsoftJson\EA.Serializers.NewtonsoftJson.csproj", "{4331E22C-D050-494B-9539-0FB55598EB0D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EA.Serializers.MessagePack", "src\EA.Serializers.MessagePack\EA.Serializers.MessagePack.csproj", "{E25F2B57-593A-4E6E-B2B3-96667C55E9A3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EA.Serializers.UnitTests", "tests\EA.Serializers.UnitTests\EA.Serializers.UnitTests.csproj", "{85A900D9-44CE-4145-ADB4-6FCA7B508188}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{888B4522-2ACA-4DAA-8CA1-DA43B0FFA043}"
 	ProjectSection(SolutionItems) = preProject
 		.github\workflows\nugetpush.yml = .github\workflows\nugetpush.yml
 		.github\workflows\sonarcloud.yml = .github\workflows\sonarcloud.yml
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ErniAcademy.Serializers.Contracts", "src\ErniAcademy.Serializers.Contracts\ErniAcademy.Serializers.Contracts.csproj", "{E777F052-37CF-425C-86F2-D41D07E0AF40}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ErniAcademy.Serializers.Json", "src\ErniAcademy.Serializers.Json\ErniAcademy.Serializers.Json.csproj", "{8104B43C-6D8B-4971-BBEF-624A9F2264AE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ErniAcademy.Serializers.MessagePack", "src\ErniAcademy.Serializers.MessagePack\ErniAcademy.Serializers.MessagePack.csproj", "{E4EF71F5-84F4-4000-9F35-2DBBFC894990}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ErniAcademy.Serializers.NewtonsoftJson", "src\ErniAcademy.Serializers.NewtonsoftJson\ErniAcademy.Serializers.NewtonsoftJson.csproj", "{02CE6122-05C2-43E3-9C47-236CD9CA0558}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ErniAcademy.Serializers.UnitTests", "tests\ErniAcademy.Serializers.UnitTests\ErniAcademy.Serializers.UnitTests.csproj", "{704C2164-51C3-444A-A334-94E0F889A63E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,37 +40,37 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F11AF6FB-0419-4D49-9176-840AE6B230C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F11AF6FB-0419-4D49-9176-840AE6B230C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F11AF6FB-0419-4D49-9176-840AE6B230C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F11AF6FB-0419-4D49-9176-840AE6B230C1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C61AEC57-737D-4A89-8050-DB3997E73298}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C61AEC57-737D-4A89-8050-DB3997E73298}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C61AEC57-737D-4A89-8050-DB3997E73298}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C61AEC57-737D-4A89-8050-DB3997E73298}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4331E22C-D050-494B-9539-0FB55598EB0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4331E22C-D050-494B-9539-0FB55598EB0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4331E22C-D050-494B-9539-0FB55598EB0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4331E22C-D050-494B-9539-0FB55598EB0D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E25F2B57-593A-4E6E-B2B3-96667C55E9A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E25F2B57-593A-4E6E-B2B3-96667C55E9A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E25F2B57-593A-4E6E-B2B3-96667C55E9A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E25F2B57-593A-4E6E-B2B3-96667C55E9A3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{85A900D9-44CE-4145-ADB4-6FCA7B508188}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{85A900D9-44CE-4145-ADB4-6FCA7B508188}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{85A900D9-44CE-4145-ADB4-6FCA7B508188}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{85A900D9-44CE-4145-ADB4-6FCA7B508188}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E777F052-37CF-425C-86F2-D41D07E0AF40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E777F052-37CF-425C-86F2-D41D07E0AF40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E777F052-37CF-425C-86F2-D41D07E0AF40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E777F052-37CF-425C-86F2-D41D07E0AF40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8104B43C-6D8B-4971-BBEF-624A9F2264AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8104B43C-6D8B-4971-BBEF-624A9F2264AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8104B43C-6D8B-4971-BBEF-624A9F2264AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8104B43C-6D8B-4971-BBEF-624A9F2264AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4EF71F5-84F4-4000-9F35-2DBBFC894990}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4EF71F5-84F4-4000-9F35-2DBBFC894990}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4EF71F5-84F4-4000-9F35-2DBBFC894990}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4EF71F5-84F4-4000-9F35-2DBBFC894990}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02CE6122-05C2-43E3-9C47-236CD9CA0558}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02CE6122-05C2-43E3-9C47-236CD9CA0558}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02CE6122-05C2-43E3-9C47-236CD9CA0558}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02CE6122-05C2-43E3-9C47-236CD9CA0558}.Release|Any CPU.Build.0 = Release|Any CPU
+		{704C2164-51C3-444A-A334-94E0F889A63E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{704C2164-51C3-444A-A334-94E0F889A63E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{704C2164-51C3-444A-A334-94E0F889A63E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{704C2164-51C3-444A-A334-94E0F889A63E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{F11AF6FB-0419-4D49-9176-840AE6B230C1} = {993A08AA-0E82-4A34-98B1-31F4401F2545}
-		{C61AEC57-737D-4A89-8050-DB3997E73298} = {993A08AA-0E82-4A34-98B1-31F4401F2545}
-		{4331E22C-D050-494B-9539-0FB55598EB0D} = {993A08AA-0E82-4A34-98B1-31F4401F2545}
-		{E25F2B57-593A-4E6E-B2B3-96667C55E9A3} = {993A08AA-0E82-4A34-98B1-31F4401F2545}
-		{85A900D9-44CE-4145-ADB4-6FCA7B508188} = {7AB46A41-E8B0-48D0-A38A-118861BA97F6}
 		{888B4522-2ACA-4DAA-8CA1-DA43B0FFA043} = {C3DA3AB0-3978-422E-AF77-6DF53633E339}
+		{E777F052-37CF-425C-86F2-D41D07E0AF40} = {993A08AA-0E82-4A34-98B1-31F4401F2545}
+		{8104B43C-6D8B-4971-BBEF-624A9F2264AE} = {993A08AA-0E82-4A34-98B1-31F4401F2545}
+		{E4EF71F5-84F4-4000-9F35-2DBBFC894990} = {993A08AA-0E82-4A34-98B1-31F4401F2545}
+		{02CE6122-05C2-43E3-9C47-236CD9CA0558} = {993A08AA-0E82-4A34-98B1-31F4401F2545}
+		{704C2164-51C3-444A-A334-94E0F889A63E} = {7AB46A41-E8B0-48D0-A38A-118861BA97F6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {99FE9388-936C-4A7A-A66B-7A4091EFA37C}

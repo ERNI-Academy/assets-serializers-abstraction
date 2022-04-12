@@ -2,7 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
@@ -25,9 +24,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\EA.Serializers.Json\EA.Serializers.Json.csproj" />
-    <ProjectReference Include="..\..\src\EA.Serializers.MessagePack\EA.Serializers.MessagePack.csproj" />
-    <ProjectReference Include="..\..\src\EA.Serializers.NewtonsoftJson\EA.Serializers.NewtonsoftJson.csproj" />
+    <ProjectReference Include="..\..\src\ErniAcademy.Serializers.Json\ErniAcademy.Serializers.Json.csproj" />
+    <ProjectReference Include="..\..\src\ErniAcademy.Serializers.MessagePack\ErniAcademy.Serializers.MessagePack.csproj" />
+    <ProjectReference Include="..\..\src\ErniAcademy.Serializers.NewtonsoftJson\ErniAcademy.Serializers.NewtonsoftJson.csproj" />
   </ItemGroup>
 
 </Project>
